@@ -1,0 +1,25 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "mbed compile",
+			"type": "process",
+			"command": "C:\\Windows\\System32\\cmd.exe",
+			"args": [
+				"/c",
+				"call ${workspaceFolder}\\..\\..\\cli2-env\\Scripts\\activate.bat && mbed-tools compile -m LPC1768 -t GCC_ARM --profile develop"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}",
+				"env": {
+                    "PYTHONWARNINGS": "ignore",
+					"PATH": "C:\\hepta-mbed-tools\\cmake\\bin;C:\\hepta-mbed-tools\\gccarm\\bin;${env:PATH}"
+                }
+			},
+			"group": "build",
+			"problemMatcher": []
+		}
+	]
+}

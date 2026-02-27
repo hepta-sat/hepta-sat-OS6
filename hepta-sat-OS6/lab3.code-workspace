@@ -1,0 +1,36 @@
+{
+  "folders": [
+    { "path": "projects/Lab3-01" },
+    { "path": "projects/Lab3-02" },
+    { "path": "projects/Lab3-03" },
+    { "path": "projects/Lab3-04" },
+    { "path": "projects/Lab3-05" },
+    { "path": "projects/Lab3-06" },
+    { "path": "projects/Lab3-07" }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/../../cli2-env/Scripts/python.exe",
+    "python.terminal.activateEnvironment": true,
+
+    "terminal.integrated.env.windows": {
+      "PSExecutionPolicyPreference": "RemoteSigned"
+    },
+
+    "terminal.integrated.profiles.windows": {
+      "PowerShell (cli2-env)": {
+        "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "args": [
+          "-NoExit",
+          "-Command",
+          "& \"${workspaceFolder}\\..\\..\\cli2-env\\Scripts\\Activate.ps1\""
+        ]
+      }
+    },
+  
+    "terminal.integrated.defaultProfile.windows": "PowerShell (cli2-env)",
+   
+    "cmake.configureOnOpen": false,
+
+    "C_Cpp.default.configurationProvider": null
+  }
+}

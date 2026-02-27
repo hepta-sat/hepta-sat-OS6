@@ -1,0 +1,8 @@
+.mbedbuild
+cmake_build/
+.vscode/*
+!.vscode/tasks.json
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

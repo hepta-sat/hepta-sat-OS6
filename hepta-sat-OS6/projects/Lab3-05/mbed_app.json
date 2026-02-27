@@ -1,0 +1,9 @@
+{
+    "target_overrides": {
+        "LPC1768": {
+            "platform.stdio-baud-rate": 9600,
+            "platform.default-serial-baud-rate": 9600,
+            "target.printf_lib": "std"
+        }
+    }
+}
